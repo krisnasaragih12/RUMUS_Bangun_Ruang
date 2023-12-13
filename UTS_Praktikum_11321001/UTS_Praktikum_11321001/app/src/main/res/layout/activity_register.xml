@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/math"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="50dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:backgroundTint="#3B833D">
+
+        <EditText
+            android:id="@+id/ktp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#FFF"
+            android:drawableLeft="@drawable/ic_baseline_numbers_24"
+            android:drawablePadding="20dp"
+            android:hint="No.KTP"
+            android:paddingLeft="20dp" />
+
+        <View
+            android:id="@+id/v_separator1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/ktp"
+            android:background="#FFF" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/v_separator1"
+            android:backgroundTint="#FFF"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="20dp"
+            android:hint="Nama"
+            android:paddingLeft="20dp" />
+
+        <View
+            android:id="@+id/v_separator2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/nama"
+            android:background="#FFF" />
+
+        <EditText
+            android:id="@+id/nomorHp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/v_separator2"
+            android:backgroundTint="#FFF"
+            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+            android:drawablePadding="20dp"
+            android:hint="No. HP"
+            android:paddingLeft="20dp" />
+
+        <View
+            android:id="@+id/v_separator3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/nomorHp"
+            android:background="#FFF" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/v_separator3"
+            android:backgroundTint="#FFF"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="20dp"
+            android:hint="Username"
+            android:paddingLeft="20dp" />
+
+        <View
+            android:id="@+id/v_separator4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/username"
+            android:background="#FFF" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/v_separator4"
+            android:backgroundTint="#FFF"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Register"
+        android:textColor="#5AAE5E"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_main"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="Login"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_main"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:onClick="login"
+        android:text="Register"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

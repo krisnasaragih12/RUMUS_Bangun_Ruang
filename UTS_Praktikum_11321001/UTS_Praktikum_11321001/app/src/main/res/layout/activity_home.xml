@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkita">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkita"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="RUMUS HITUNG BANGUN DATAR DAN RUANG"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPersegi"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#27A0DC"
+            android:text="Bujur Sangkar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSegitiga"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#27A0DC"
+            android:onClick="segitiga"
+            android:text="Segitiga" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLayangLayang"
+        android:layout_width="360dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="layangLayang"
+        android:text="Layang-Layang" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnKubus"
+            android:layout_width="330dp"
+            android:layout_height="112dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#27A0DC"
+            android:onClick="kubus"
+            android:text="Kubus" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTrapesium"
+        android:layout_width="360dp"
+        android:layout_height="112dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="trapesium"
+        android:text="Trapesium" />
+
+    <Button
+        android:id="@+id/btnLingkaran"
+        android:layout_width="356dp"
+        android:layout_height="112dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="lingkaran"
+        android:text="Lingkaran" />
+
+    <Button
+        android:id="@+id/btnTabung"
+        android:layout_width="356dp"
+        android:layout_height="113dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="tabung"
+        android:text="Tabung" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBelahKetupat"
+        android:layout_width="356dp"
+        android:layout_height="102dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="belahKetupat"
+        android:text="Belah Ketupat" />
+
+    <Button
+        android:id="@+id/btnBola"
+        android:layout_width="356dp"
+        android:layout_height="112dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="bola"
+        android:text="Bola" />
+
+    <Button
+        android:id="@+id/btnPersegiPanjang"
+        android:layout_width="356dp"
+        android:layout_height="112dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="persegiPanjang"
+        android:text="Persegi Panjang" />
+
+    <Button
+        android:id="@+id/btnPrisma"
+        android:layout_width="356dp"
+        android:layout_height="112dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="prisma"
+        android:text="Prisma" />
+
+    <Button
+        android:id="@+id/btnJajarGenjang"
+        android:layout_width="356dp"
+        android:layout_height="112dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="jajarGenjang"
+        android:text="Jajar Genjang" />
+
+    <Button
+        android:id="@+id/btnBalok"
+        android:layout_width="356dp"
+        android:layout_height="112dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="balok"
+        android:text="Balok" />
+
+    <Button
+        android:id="@+id/btnKerucut"
+        android:layout_width="356dp"
+        android:layout_height="112dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#27A0DC"
+        android:onClick="kerucut"
+        android:text="Kerucut" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#CC5A36"
+        android:onClick="logout"
+        android:text="Keluar" />
+
+</LinearLayout>
+</ScrollView>
